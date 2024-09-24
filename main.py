@@ -1,6 +1,6 @@
 from crewai import Crew
-from .agents import dataset_provider_agent
-from .tasks import dataset_provider
+from agents import dataset_provider_agent
+from tasks import dataset_provider
 from crewai import Process
 
 crew=Crew(
