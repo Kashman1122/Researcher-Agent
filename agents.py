@@ -2,7 +2,7 @@ from crewai import Agent
 import os
 from dotenv import load_dotenv
 load_dotenv()
-from .tools import tool
+from tools import tool
 #now i am going to create agent1
 google_api_key=os.getenv('google_api_key')
 from langchain_google_genai import  ChatGoogleGenerativeAI
