@@ -6,7 +6,7 @@ from tools import tool
 #now i am going to create agent1
 google_api_key=os.getenv('google_api_key')
 from langchain_google_genai import  ChatGoogleGenerativeAI
-llm=ChatGoogleGenerativeAI(model="gemini-1.5-pro",
+llm=ChatGoogleGenerativeAI(model="gemini-1.5-flash",
                            verbose=True,
                            temprature=0,
                            google_api_key=google_api_key,)
