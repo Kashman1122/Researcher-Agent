@@ -1,6 +1,6 @@
 from crewai import Task
-from .agents import dataset_provider_agent
-from .tools import tool
+from agents import dataset_provider_agent
+from tools import tool
 
 dataset_provider=Task(
 description="""
