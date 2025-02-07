@@ -27,7 +27,7 @@ from tools import tool
 
 dataset_provider = Task(
     description="""
-    Your Task is to provide the top 5 research paper and patent links based on the provided {input}.
+    Your Task is to provide the top 50 research paper and patent links based on the provided {input}.
     You should filter the results based on the following criteria:
     - **Title**: Match the user's input with the title of the patent or paper.
     - **Abstract**: Match the user's input with the abstract of the patent or paper.
