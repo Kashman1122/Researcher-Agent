@@ -54,6 +54,8 @@ from tasks import dataset_provider
 from crewai import Process
 import httpx
 import asyncio
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # Initialize FastAPI app
 app = FastAPI()
