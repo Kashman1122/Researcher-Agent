@@ -58,6 +58,13 @@ import asyncio
 # Initialize FastAPI app
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://daminiai.pythonanywhere.com/index/","*"],  # Change * to allow all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
 # Initialize CrewAI configuration
 crew = Crew(
     agents=[dataset_provider_agent],
